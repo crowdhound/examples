@@ -3,7 +3,7 @@
 <head>
 	<link href="mypage.css" rel="stylesheet">
 	<link rel="stylesheet" href="http://bcteam.github.io/Solas-UI/0.0.5/css/bc-theme.css">
-	<link href="http://auf.crowdhound.io/libs/font-awesome-4.3.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="//auf.crowdhound.io/libs/font-awesome-4.3.0/css/font-awesome.min.css" rel="stylesheet">
 
 	<style>
 	body {
@@ -29,6 +29,9 @@
 	.skipped {
 		color: #aaa;
 	}
+	th.col2 {
+		width: 25%;
+	}
 	</style>
 </head>
 
@@ -44,6 +47,19 @@
 				<div class="col-md-12">
 					<h1 class="repo-header-xl">Crowdhound Tutorial</h1>
 					<p>A quick tutorial on how to add Crowdhound to an existing website.</p>
+					<p>
+						Your Tutorial exercises will modify this ficticious site: <a href="../exercises/snailadvisor.com/index.html" target="_blank">snailadvisor.com</a>.
+					</p>
+					<p>
+						As we proceed through the topics below, there is an example page for each topic, and also a link to a wiki page
+						describing the code on the page. The topics build one on top of the next, gradually extending the functionality
+						of the example.
+					</p>
+				<p>
+					At the end of each section there is an exercise, where you take the code from the example pages
+					and apply it to the Snail Advisor site.
+				</p>
+					
 				</div>
 				<div class="col-xs-12">
 
@@ -58,636 +74,598 @@
 						Accessing the Database
 						<br/>
 					-->
+					<p/>
 					<br/>
-					Your Tutorial exercises will modify this ficticious site: <a href="../exercises/snailadvisor.com/home.html" target="_blank">snailadvisor.com</a>. The source for these pages can be found at /Development/projects/crowdhound-examples/crowdhound-examples/exercises.
+
+
+
+
+
+					<h2>Part 2 - Your First Crowdhound Page</h2>
+					<p>
+						In this section we take a simple HTML page and add a Crowd Hound comments section.
+						<br/>
+						<br/>
+						<a href="2.1-newspaper.html" target="_blank">2.1 - Responsive HTML page</a>
+						<br/>
+						<a href="2.2-minimal.html" target="_blank">2.2 - Minimal Crowd Hound</a>
+						<br/>
+					</p>
 					<br/>
-				</p>
-				<br/>
 
 
 
 
 
-				<h2>Part 2 - Your First Crowdhound Page</h2>
-				<p>
-					In this section we take a simple HTML page and add a Crowd Hound comments section.
+
+
+
+
+					<h2>Part 3 - A bit of theory</h2>
+
+					<p>
+						Sections from the <a target="_blank" href="https://github.com/tooltwist/crowdhound-examples/wiki/3.1%3A-Core-Concepts-and-Terminology">wiki page</a>.
+
+						<br>
+						<ul>
+							<li><a target="_blank" href="https://github.com/tooltwist/crowdhound-examples/wiki/3.1%3A-Core-Concepts-and-Terminology#elements" target="_blank">Elements</a></li>
+							<li><a target="_blank" href="https://github.com/tooltwist/crowdhound-examples/wiki/3.1%3A-Core-Concepts-and-Terminology#threads" target="_blank">Threads</a></li>
+							<li><a target="_blank" href="https://github.com/tooltwist/crowdhound-examples/wiki/3.1%3A-Core-Concepts-and-Terminology#anchors" target="_blank">Anchors</a></li>
+							<li><a target="_blank" href="https://github.com/tooltwist/crowdhound-examples/wiki/3.1%3A-Core-Concepts-and-Terminology#tenants" target="_blank">Tenants</a></li>
+							<li><a target="_blank" href="https://github.com/tooltwist/crowdhound-examples/wiki/3.1%3A-Core-Concepts-and-Terminology#templates" target="_blank">Templates</a></li>
+							<li><a target="_blank" href="https://github.com/tooltwist/crowdhound-examples/wiki/3.1%3A-Core-Concepts-and-Terminology#themes" target="_blank">Themes</a></li>
+							<li><a target="_blank" href="https://github.com/tooltwist/crowdhound-examples/wiki/3.1%3A-Core-Concepts-and-Terminology#select-cook-render" target="_blank">Select, Cook, Render</a></li>
+						</ul>
+					</p>
 					<br/>
-					<br/>
-					<a href="2.1-newspaper.html" target="_blank">2.1 - Responsive HTML page</a>
-					<br/>
-					<a href="2.2-minimal.html" target="_blank">2.2 - Minimal Crowd Hound</a>
-					<br/>
-				</p>
-				<br/>
 
 
 
 
 
-
-
-
-
-				<h2>Part 3 - A bit of theory</h2>
-
-				<p>
-					Sections from the <a target="_blank" href="https://github.com/tooltwist/crowdhound-examples/wiki/3.1%3A-Core-Concepts-and-Terminology">wiki page</a>.
-
-					<br>
-					<ul>
-						<li><a target="_blank" href="https://github.com/tooltwist/crowdhound-examples/wiki/3.1%3A-Core-Concepts-and-Terminology#elements" target="_blank">Elements</a></li>
-						<li><a target="_blank" href="https://github.com/tooltwist/crowdhound-examples/wiki/3.1%3A-Core-Concepts-and-Terminology#threads" target="_blank">Threads</a></li>
-						<li><a target="_blank" href="https://github.com/tooltwist/crowdhound-examples/wiki/3.1%3A-Core-Concepts-and-Terminology#anchors" target="_blank">Anchors</a></li>
-						<li><a target="_blank" href="https://github.com/tooltwist/crowdhound-examples/wiki/3.1%3A-Core-Concepts-and-Terminology#tenants" target="_blank">Tenants</a></li>
-						<li><a target="_blank" href="https://github.com/tooltwist/crowdhound-examples/wiki/3.1%3A-Core-Concepts-and-Terminology#templates" target="_blank">Templates</a></li>
-						<li><a target="_blank" href="https://github.com/tooltwist/crowdhound-examples/wiki/3.1%3A-Core-Concepts-and-Terminology#themes" target="_blank">Themes</a></li>
-						<li><a target="_blank" href="https://github.com/tooltwist/crowdhound-examples/wiki/3.1%3A-Core-Concepts-and-Terminology#select-cook-render" target="_blank">Select, Cook, Render</a></li>
-					</ul>
-					<!--
-					Debug?
-					<br>
-					<i>(This section is not ready yet)</i>
-					<a href="../tutorials/1.0.1-newspaper.html" target="_blank">Themes</a>
-					<br/>
-					<a href="../tutorials/1.0.1-newspaper.html" target="_blank">Hiding elements</a>
-					<br/>
-					<a href="../tutorials/1.0.1-newspaper.html" target="_blank">Custom ???</a>
-					<br/>
-					<a href="../tutorials/1.0.1-newspaper.html" target="_blank">Anchors ???</a>
-					<br/>
-					<a href="../tutorials/1.0.1-newspaper.html" target="_blank">Page ???</a>
-					<br/>
-				-->
-			</p>
-			<br/>
-
-
-
-
-
-			<h2>Part 4 - Comments</h2>
-			<p>
-				In this section we take a simple HTML page and add a Crowd Hound comments section.
-				<br/>
-				<br/>
-				<table>
-					<thead>
-						<tr>
-							<th>Example Page</th>
-							<th>Notes</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td><a href="4.1-comments.html" target="_blank">4.1 - Read-only comments</a></td>
-							<td><a href="https://github.com/tooltwist/crowdhound-examples/wiki/4.1:-Read-only-comments" target="_blank">wiki</a></td>
-						</tr>
-
-						<tr>
-							<td><a href="4.2-anchor.html" target="_blank">4.2 - Anchors</a></td>
-							<td><a href="https://github.com/tooltwist/crowdhound-examples/wiki/4.2:-Anchors" target="_blank">wiki</a></td>
-						</tr>
-						<tr>
-							<td><a href="4.3-live.html" target="_blank">4.3 - Editable comments</a></td>
-							<td><a href="https://github.com/tooltwist/crowdhound-examples/wiki/4.3:-Editable-comments" target="_blank">wiki</a></td>
-						</tr>
-						<tr>
-							<td>
-								<a href="4.4-dynamic-anchor.html?articleId=10922" target="_blank">4.4a - Dynamic Anchor - article 10922</a>
-								<br/>
-								<a href="4.4-dynamic-anchor.html?articleId=10943" target="_blank">4.4b - Dynamic Anchor - article 10943</a>
-								<br/>
-								<a href="4.4-dynamic-anchor.html?articleId=10988" target="_blank">4.4c - Dynamic Anchor - article 10988</a>
-
-							</td>
-							<td><a href="https://github.com/tooltwist/crowdhound-examples/wiki/4.4:-Dynamic-Anchors" target="_blank">wiki</a></td>
-						</tr>
-					</tbody>
-				</table>
-
-				<div class="exercise">
-					<h3>Exercise</h3>
-					Add an editable comments section to the following pages:
-					<ul>
-						<li><a href="../exercises/snailadvisor.com/african.html" target="_blank">snailadvisor.com</a></li>
-						<li><a href="../exercises/snailadvisor.com/african.html" target="_blank">Giant African snails</a></li>
-						<li><a href="../exercises/snailadvisor.com/garden.html" target="_blank">Garden snails</a></li>
-						<li><a href="../exercises/snailadvisor.com/slugs.html" target="_blank">Slugs</a></li>
-					</ul>
-				</div>
-				<br/>
-
-
-
-
-
-
-				<h2>Part 5 - Advanced Comments</h2>
-				<p>
-					In this section we add HTML, images, and nested replies to our comments section.
-				</p>
-
-				<br/>
-				<table>
-					<thead>
-						<tr>
-							<th>Example Page</th>
-							<th>Notes</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td><a href="5.1-nested.html" target="_blank">5.1 - Nested comments</a></td>
-							<td><a href="https://github.com/tooltwist/crowdhound-examples/wiki/4.1:-Read-only-comments" target="_blank">wiki</a></td>
-						</tr>
-						<tr>
-							<td><a href="5.2-html.html" target="_blank">5.2 - HTML comments</a></td>
-							<td><a href="https://github.com/tooltwist/crowdhound-examples/wiki/4.2:-Anchors" target="_blank">wiki</a></td>
-						</tr>
-						<tr>
-							<td><a href="5.3-froala.html" target="_blank">5.3 - Froala + Images</a></td>
-							<td><a href="https://github.com/tooltwist/crowdhound-examples/wiki/4.3:-Editable-comments" target="_blank">wiki</a></td>
-						</tr>
-						<!--
-						<tr>
-							<td><a href="5.4-imageUpload.html" target="_blank">5.4 - Uploading images</a></td>
-							<td><a href="https://github.com/tooltwist/crowdhound-examples/wiki/5.5:-Editing-with-Markdown" target="_blank">wiki</a></td>
-						</tr>
-						-->
-						<tr>
-							<td class="skipped">5.4 - Uploading images</td>
-							<td class="skipped">skipped</td>
-						</tr>
-						<tr>
-							<td><a href="5.5-markdown.html" target="_blank">5.5 - Editing with Markdown</a></td>
-							<td><a href="https://github.com/tooltwist/crowdhound-examples/wiki/5.5:-Editing-with-Markdown" target="_blank">wiki</a></td>
-						</tr>
-						<!--
-						<tr>
-						<td><a href="5.6-ckedit.html" target="_blank">5.6: Editing with CKEdit</a></td>
-						<td><a href="https://github.com/tooltwist/crowdhound-examples/wiki/5.6:-Editing-with-CKEdit" target="_blank"></a></td>
-						</tr>
-						-->
-						<tr>
-							<td class="skipped">5.6 - Editing with CKEdit</td>
-							<td class="skipped">skipped</td>
-						</tr>
-					</tbody>
-				</table>
-
-<div class="exercise">
-	<h3>Exercise</h3>
-	Adjust the code from your previous exercise to allow nested HTML comments and uploading of images to the pages:
-	<ul>
-		<li><a href="../exercises/snailadvisor.com/african.html" target="_blank">snailadvisor.com</a></li>
-		<li><a href="../exercises/snailadvisor.com/african.html" target="_blank">Giant African snails</a></li>
-		<li><a href="../exercises/snailadvisor.com/garden.html" target="_blank">Garden snails</a></li>
-		<li><a href="../exercises/snailadvisor.com/slugs.html" target="_blank">Slugs</a></li>
-	</ul>
-</div>
-
-<br/>
-
-
-
-
-
-<h2>Part 6 - Select, Cook, Render</h2>
-
-<p>
-	In this section we discuss how elements are selected, how they can be manipulated, and how they are displayed.
-</p>
-
-<br/>
-<table>
-	<thead>
-		<tr>
-			<th>Topic</th>
-			<th>Wiki page</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td><a href="#" onclick="return false;">6.1 - Debugging</a></td>
-			<td><a href="https://github.com/tooltwist/crowdhound-examples/wiki/6.1%3A-Debugging" target="_blank">wiki</a></td>
-		</tr>
-
-		<tr>
-			<td><a href="#" onclick="return false;">6.2 - Select</a></td>
-			<td><a href="https://github.com/tooltwist/crowdhound-examples/wiki/6.2%3A-Selecting" target="_blank">wiki</a></td>
-		</tr>
-		<tr>
-			<td><a href="#" onclick="return false;">6.3 - Cooking</a></td>
-			<td><a href="https://github.com/tooltwist/crowdhound-examples/wiki/6.3%3A-Cooking" target="_blank">wiki</a></td>
-		</tr>
-		<tr>
-			<td><a href="#" onclick="return false;">6.4 - Rendering</a></td>
-			<td><a href="https://github.com/tooltwist/crowdhound-examples/wiki/6.4%3A-Rendering" target="_blank">wiki</a></td>
-		</tr>
-		<tr>
-			<td><a href="#" onclick="return false;">6.5 - Custom Templates</a></td>
-			<td><a href="https://github.com/tooltwist/crowdhound-examples/wiki/6.5%3A-Custom-Templates" target="_blank">wiki</a></td>
-		</tr>
-	</tbody>
-</table>
-
-
-<br/>
-
-
-
-
-
-<h2>Part 7 - Forum</h2>
-
-
-<p>
-	In this section we look at how the Crowdhound pieces can be assembled to implement
-	a fully functional forum, where users can discuss various topics.
-</p>
-
-<br/>
-<table>
-	<thead>
-		<tr>
-			<th>Topic</th>
-			<th>Wiki page</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td><a href="7.1-sidebar.html" target="_blank">7.1: Responsive Page with sidebar</a></td>
-			<td><a href="https://github.com/tooltwist/crowdhound-examples/wiki/7.1%3A-Responsive-Page-with-sidebar" target="_blank">wiki</a></td>
-		</tr>
-		<tr>
-			<td><a href="7.2-small-forum.html" target="_blank">7.2: Small Forum</a></td>
-			<td><a href="https://github.com/tooltwist/crowdhound-examples/wiki/7.2%3A-Small-Forum" target="_blank">wiki</a></td>
-		</tr>
-		<tr>
-			<td><a href="7.3-big-forum.html" target="_blank">7.3: Big Forum</a></td>
-			<td><a href="https://github.com/tooltwist/crowdhound-examples/wiki/7.3%3A-Big-Forum" target="_blank">wiki</a></td>
-		</tr>
-		<tr>
-			<td><a href="7.4-hooks.html" target="_blank">7.4: Hooks</a></td>
-			<td><a href="https://github.com/tooltwist/crowdhound-examples/wiki/7.4%3A-Hooks" target="_blank">wiki</a></td>
-		</tr>
-		<tr>
-			<td><a href="7.5-mixed-content.html" target="_blank">7.5: Mixed Content (HTML + Markdown)</a></td>
-			<td><a href="https://github.com/tooltwist/crowdhound-examples/wiki/7.5%3A-Mixed-Content-%28HTML---Markdown%29" target="_blank">wiki</a></td>
-		</tr>
-	</tbody>
-</table>
-
-<div class="exercise">
-	<h3>Exercise</h3>
-	Add the missing forum functionality to snailadvisor.com forum page.
-	<ul>
-		<li><a href="../exercises/snailadvisor.com/forum.html" target="_blank">Forum</a></li>
-	</ul>
-</div>
-
-</p>
-<br/>
-
-
-
-
-
-<h2>Part 8 - Votes, Page Views and Notifications</h2>
-
-<p>
-	Crowdhound has various counting and scoring functions that are be used
-	to collect user feedback in a similar manner to Facebook, Twitter and
-	TripAdvisor. It also allows users to sign up for notifications of
-	various events.
-</p>
-
-<br/>
-<table>
-	<thead>
-		<tr>
-			<th>Example Page</th>
-			<th>Notes</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td class="skipped">8.1 - Likes</td>
-			<td class="skipped">skipped</td>
-		</tr>
-		<tr>
-			<td class="skipped">8.2 - Likes and Dislikes</td>
-			<td class="skipped">skipped</td>
-		</tr>
-		<tr>
-			<td class="skipped">8.3 - Star Ratings</td>
-			<td class="skipped">skipped</td>
-		</tr>
-		<tr>
-			<td class="skipped">8.4 - Percentage Ratings</td>
-			<td class="skipped">skipped</td>
-		</tr>
-		<tr>
-			<td class="skipped">8.5 - Aggregated Scores</td>
-			<td class="skipped">skipped</td>
-		</tr>
-		<tr>
-			<td class="skipped">8.6 - Counting Page Views</td>
-			<td class="skipped">skipped</td>
-		</tr>
-		<tr>
-			<td class="skipped">8.7 - Notifications</td>
-			<td class="skipped">skipped</td>
-		</tr>
-	</tbody>
-</table>
-
-<div class="exercise">
-<h3>Exercise</h3>
-<div class="skipped">
-(skip for now)
-<br/>
-Add the missing forum functionality to snailadvisor.com forum page.
-<ul>
-	<li><a href="../exercises/snailadvisor.com/store.html" target="_blank">Store</a></li>
-</ul>
-
-</div><!-- skipped -->
-</div><!-- exercise -->
-
-<br/>
-
-
-
-
-
-
-<h2>Part 9 - Blog</h2>
-
-<p>
-	In this section we look at creating blogs, firstly a regular simple
-	blog, followed by a great looking magazine-style format with multiple
-	sized images.
-</p>
-
-<br/>
-<table>
-	<thead>
-		<tr>
-			<th>Example Page</th>
-			<th>Notes</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td class="skipped">9.1 - Blog</td>
-			<td class="skipped">skipped</td>
-		</tr>
-		<tr>
-			<td class="skipped">9.2 - Fancy Blog</td>
-			<td class="skipped">skipped</td>
-		</tr>
-	</tbody>
-</table>
-
-<div class="exercise">
-<h3>Exercise</h3>
-<div class="skipped">
-(skip for now)
-<br/>
-Add the missing blog functionality to snailadvisor.com blog page.
-<ul>
-	<li><a href="../exercises/snailadvisor.com/blog.html" target="_blank">Blog</a></li>
-</ul>
-
-</div>
-
-<br/>
-
-
-
-
-
-
-
-<h2>Part 10 - Chat and Messaging</h2>
-
-<p>
-	In this section we look at how Crowdhound can provide basic functionality,
-	between two people, or as a group.
-</p>
-
-<br/>
-<table>
-	<thead>
-		<tr>
-			<th>Example Page</th>
-			<th>Notes</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td class="skipped">10.1 - Two-person chat</td>
-			<td class="skipped">skipped</td>
-		</tr>
-		<tr>
-			<td class="skipped">10.2 - Group chat</td>
-			<td class="skipped">skipped</td>
-		</tr>
-	</tbody>
-</table>
-<br>
-<br>
-
-
-
-
-<h2>Part 11 - Calendars and Events</h2>
-
-<p>
-	Crowdhound support calendars functionality, to advertise events and
-
-</p>
-
-<br/>
-<table>
-	<thead>
-		<tr>
-			<th>Example Page</th>
-			<th>Notes</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td class="skipped">10.1 - Two-person chat</td>
-			<td class="skipped">skipped</td>
-		</tr>
-		<tr>
-			<td class="skipped">10.2 - Group chat</td>
-			<td class="skipped">skipped</td>
-		</tr>
-	</tbody>
-</table>
-<br/>
-
-
-
-
-
-<h2>Part 12 - Search</h2>
-<p>
-</p>
-<br/>
-
-
-
-
-
-<h2>Part 13 - Advanced: Tenant Plugin</h2>
-<p>
-</p>
-
-
-
-
-
-
-
-
-
-
-</div>
-</div>
-</div>
-</div><!-- repo-container -->
-
-
-
-
-<h2 class="repo-header-lg">Default table</h2>
-
-
-
-
-
-
-
-
-<h1>Crowdhound Tutorial</h1>
-
-
-<!--
-
-<h2>Part 1 - Introduction</h2>
-<p>
-<a href="https://github.com/tooltwist/crowdhound-examples/wiki/Chapter-1%3A-Prerequisites" target="_blank">PreRequisites</a>
-<br/>
-<a href="https://github.com/tooltwist/crowdhound-examples/wiki/Chapter-2:-Installation" target="_blank">Installation</a>
-<br/>
-Accessing the Database
-<br/>
-<br/>
-You Tutorial exercises will modify this ficticious site: <a href="../exercises/snailadvisor.com/home.html" target="_blank">snailadvisor.com</a>. The source for these pages can be found at /Development/projects/crowdhound-examples/crowdhound-examples/exercises.
-<br/>
-</p>
-
-<h2>Part 2 - Your First Crowdhound Page</h2>
-<p>
-In this section we take a simple HTML page and add a Crowd Hound comments section.
-<br/>
-<br/>
-<a href="2.1-newspaper.html" target="_blank">2.1 - Responsive HTML page</a>
-<br/>
-<a href="2.2-minimal.html" target="_blank">2.2 - Minimal Crowd Hound</a>
-<br/>
-</p>
--->
-
-
-
-
-
-<div id="thread" class="curia-thread-NEW" data-curia-theme="my-theme"></div>
-
-</body>
-
-<!--
---
---		CrowdHound template for categories
---
--->
-<script id="crowdhound-category-template" type="text/template">
-	<div class="comment-block curia-element-container-NEW <<#element.deleted>>deleted<</element.deleted>>"
-		data-element-id="<<element.id>>"
-			style="margin: 20px; padding-top: 20px;">
-
-			<hr/>
-			<h1><<element.summary>><h1/>
-
-				<p>
-					<<element.description>>
-						<p/>
-
-						<!-- Children of element <<element.id>> -->
-						<<{childrenHtml}>>
-					</div>
-				</script>
-
-				<!--
-				--
-				--		CrowdHound template for topics
-				--
-			-->
-			<script id="crowdhound-topic-template" type="text/template">
-				<div class="comment-block curia-element-container-NEW <<#element.deleted>>deleted<</element.deleted>>"
-					data-element-id="<<element.id>>"
-						style="margin: 20px; padding-top: 20px;">
-
-						<h2><<element.summary>><h2/>
-
-							<<{element.description}>>
-
-							<<{childrenHtml}>>
+					<h2>Part 4 - Comments</h2>
+					<p>
+						In this section we take a simple HTML page and add a Crowd Hound comments section.
+						<br/>
+						<br/>
+						<table>
+							<thead>
+								<tr>
+									<th>Example Page</th>
+									<th class="col2">Notes</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><a href="4.1-comments.html" target="_blank">4.1 - Read-only comments</a></td>
+									<td><a href="https://github.com/tooltwist/crowdhound-examples/wiki/4.1:-Read-only-comments" target="_blank">wiki</a></td>
+								</tr>
+
+								<tr>
+									<td><a href="4.2-anchor.html" target="_blank">4.2 - Anchors</a></td>
+									<td><a href="https://github.com/tooltwist/crowdhound-examples/wiki/4.2:-Anchors" target="_blank">wiki</a></td>
+								</tr>
+								<tr>
+									<td><a href="4.3-live.html" target="_blank">4.3 - Editable comments</a></td>
+									<td><a href="https://github.com/tooltwist/crowdhound-examples/wiki/4.3:-Editable-comments" target="_blank">wiki</a></td>
+								</tr>
+								<tr>
+									<td>
+										<a href="4.4-dynamic-anchor.html?articleId=10922" target="_blank">4.4a - Dynamic Anchor - article 10922</a>
+										<br/>
+										<a href="4.4-dynamic-anchor.html?articleId=10943" target="_blank">4.4b - Dynamic Anchor - article 10943</a>
+										<br/>
+										<a href="4.4-dynamic-anchor.html?articleId=10988" target="_blank">4.4c - Dynamic Anchor - article 10988</a>
+
+									</td>
+									<td><a href="https://github.com/tooltwist/crowdhound-examples/wiki/4.4:-Dynamic-Anchors" target="_blank">wiki</a></td>
+								</tr>
+							</tbody>
+						</table>
+
+						<div class="exercise">
+							<h3>Exercise</h3>
+							Add an editable comments section to the following pages:
+							<ul>
+								<li><a href="../exercises/snailadvisor.com/african.html" target="_blank">snailadvisor.com</a></li>
+								<li><a href="../exercises/snailadvisor.com/african.html" target="_blank">Giant African snails</a></li>
+								<li><a href="../exercises/snailadvisor.com/garden.html" target="_blank">Garden snails</a></li>
+								<li><a href="../exercises/snailadvisor.com/slugs.html" target="_blank">Slugs</a></li>
+							</ul>
 						</div>
-					</script>
+						<br/>
 
 
 
-					<script src="http://auf.crowdhound.io/libs/jquery-1.11.3/jquery.min.js"></script>
-					<script src="http://auf.crowdhound.io/js/curia-0.1.1.js"></script>
-					<script src="http://auf.crowdhound.io/libs/mustache-2.1.3/mustache.min.js"></script>
-					<script src="http://auf.crowdhound.io/libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
-					<script>
 
-/*
-					// Initialize the Curia Forum
-					Curia.init({
-						apiVersion: '2.0',
-						serverUrl: 'http://auf.crowdhound.io',
-						tenantId: 'studylane',
-						development_userId: '1004513',
-						debug: false,
-						themes: {
-							"my-theme": {
-								"*_0": 				'/templates/basic/hidden',
-								"*_1": 				'#crowdhound-category-template',
-								"*_2": 				'#crowdhound-topic-template',
-								//	                "*_2": 				'/templates/basic/debug',
-								"*_3": 				'/templates/basic/element-1',
-								"*_8": 				'/templates/basic/hidden',
-								"attachment_0": 	'/templates/basic/hidden',
-								//	                "*_0": 				'/templates/basic/element-0',
-								//	                "*_1": 				'/templates/basic/element-1',
-							},
-						}
-					});
 
-					var elementSelector = '#thread';
-					//var topicId = 1007791;
-					//var topicId = '$product-117';
-					//var topicId = 278060; // Studylane category-list
-					var topicId = '$categoryList'; // Studylane category-list
-					Curia.displayThread(elementSelector, topicId, 'my-theme');
-*/
-					</script>
-					</html>
+
+						<h2>Part 5 - Advanced Comments</h2>
+						<p>
+							In this section we add HTML, images, and nested replies to our comments section.
+						</p>
+
+						<br/>
+						<table>
+							<thead>
+								<tr>
+									<th>Example Page</th>
+									<th class="col2">Notes</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><a href="5.1-nested.html" target="_blank">5.1 - Nested comments</a></td>
+									<td><a href="https://github.com/tooltwist/crowdhound-examples/wiki/4.1:-Read-only-comments" target="_blank">wiki</a></td>
+								</tr>
+								<tr>
+									<td><a href="5.2-html.html" target="_blank">5.2 - HTML comments</a></td>
+									<td><a href="https://github.com/tooltwist/crowdhound-examples/wiki/4.2:-Anchors" target="_blank">wiki</a></td>
+								</tr>
+								<tr>
+									<td><a href="5.3-froala.html" target="_blank">5.3 - Froala + Images</a></td>
+									<td><a href="https://github.com/tooltwist/crowdhound-examples/wiki/4.3:-Editable-comments" target="_blank">wiki</a></td>
+								</tr>
+								<tr>
+									<td class="skipped">5.4 - Uploading images</td>
+									<td class="skipped">skipped</td>
+								</tr>
+								<tr>
+									<td><a href="5.5-markdown.html" target="_blank">5.5 - Editing with Markdown</a></td>
+									<td><a href="https://github.com/tooltwist/crowdhound-examples/wiki/5.5:-Editing-with-Markdown" target="_blank">wiki</a></td>
+								</tr>
+								<tr>
+									<td class="skipped">5.6 - Editing with CKEdit</td>
+									<td class="skipped">skipped</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<div class="exercise">
+							<h3>Exercise</h3>
+							Adjust the code from your previous exercise to allow nested HTML comments and uploading of images to the pages:
+							<ul>
+								<li><a href="../exercises/snailadvisor.com/african.html" target="_blank">snailadvisor.com</a></li>
+								<li><a href="../exercises/snailadvisor.com/african.html" target="_blank">Giant African snails</a></li>
+								<li><a href="../exercises/snailadvisor.com/garden.html" target="_blank">Garden snails</a></li>
+								<li><a href="../exercises/snailadvisor.com/slugs.html" target="_blank">Slugs</a></li>
+							</ul>
+						</div>
+
+						<br/>
+
+
+
+
+
+						<h2>Part 6 - Select, Cook, Render</h2>
+
+						<p>
+							In this section we discuss how elements are selected, how they can be manipulated, and how they are displayed.
+						</p>
+
+						<br/>
+						<table>
+							<thead>
+								<tr>
+									<th>Topic</th>
+									<th class="col2">Wiki page</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><a href="#" onclick="return false;">6.1 - Debugging</a></td>
+									<td><a href="https://github.com/tooltwist/crowdhound-examples/wiki/6.1%3A-Debugging" target="_blank">wiki</a></td>
+								</tr>
+
+								<tr>
+									<td><a href="#" onclick="return false;">6.2 - Select</a></td>
+									<td><a href="https://github.com/tooltwist/crowdhound-examples/wiki/6.2%3A-Selecting" target="_blank">wiki</a></td>
+								</tr>
+								<tr>
+									<td><a href="#" onclick="return false;">6.3 - Cooking</a></td>
+									<td><a href="https://github.com/tooltwist/crowdhound-examples/wiki/6.3%3A-Cooking" target="_blank">wiki</a></td>
+								</tr>
+								<tr>
+									<td><a href="#" onclick="return false;">6.4 - Rendering</a></td>
+									<td><a href="https://github.com/tooltwist/crowdhound-examples/wiki/6.4%3A-Rendering" target="_blank">wiki</a></td>
+								</tr>
+								<tr>
+									<td><a href="#" onclick="return false;">6.5 - Custom Templates</a></td>
+									<td><a href="https://github.com/tooltwist/crowdhound-examples/wiki/6.5%3A-Custom-Templates" target="_blank">wiki</a></td>
+								</tr>
+							</tbody>
+						</table>
+
+
+						<br/>
+
+
+
+
+
+						<h2>Part 7 - Forum</h2>
+
+
+						<p>
+							In this section we look at how the Crowdhound pieces can be assembled to implement
+							a fully functional forum, where users can discuss various topics.
+						</p>
+
+						<br/>
+						<table>
+							<thead>
+								<tr>
+									<th>Topic</th>
+									<th class="col2">Wiki page</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><a href="7.1-sidebar.html" target="_blank">7.1: Responsive Page with sidebar</a></td>
+									<td><a href="https://github.com/tooltwist/crowdhound-examples/wiki/7.1%3A-Responsive-Page-with-sidebar" target="_blank">wiki</a></td>
+								</tr>
+								<tr>
+									<td><a href="7.2-small-forum.html" target="_blank">7.2: Small Forum</a></td>
+									<td><a href="https://github.com/tooltwist/crowdhound-examples/wiki/7.2%3A-Small-Forum" target="_blank">wiki</a></td>
+								</tr>
+								<tr>
+									<td><a href="7.3-big-forum.html" target="_blank">7.3: Big Forum</a></td>
+									<td><a href="https://github.com/tooltwist/crowdhound-examples/wiki/7.3%3A-Big-Forum" target="_blank">wiki</a></td>
+								</tr>
+								<tr>
+									<td><a href="7.4-hooks.html" target="_blank">7.4: Hooks</a></td>
+									<td><a href="https://github.com/tooltwist/crowdhound-examples/wiki/7.4%3A-Hooks" target="_blank">wiki</a></td>
+								</tr>
+								<tr>
+									<td><a href="7.5-mixed-content.html" target="_blank">7.5: Mixed Content (HTML + Markdown)</a></td>
+									<td><a href="https://github.com/tooltwist/crowdhound-examples/wiki/7.5%3A-Mixed-Content-%28HTML---Markdown%29" target="_blank">wiki</a></td>
+								</tr>
+							</tbody>
+						</table>
+
+						<div class="exercise">
+							<h3>Exercise</h3>
+							Add the missing forum functionality to snailadvisor.com forum page.
+							<ul>
+								<li><a href="../exercises/snailadvisor.com/forum.html" target="_blank">Forum</a></li>
+							</ul>
+						</div>
+
+					</p>
+					<br/>
+
+
+
+
+
+					<h2>Part 8 - Votes, Page Views and Notifications</h2>
+
+					<p>
+						Crowdhound has various counting and scoring functions that are be used
+						to collect user feedback in a similar manner to Facebook, Twitter and
+						TripAdvisor. It also allows users to sign up for notifications of
+						various events.
+					</p>
+
+					<br/>
+					<table>
+						<thead>
+							<tr>
+								<th>Example Page</th>
+								<th class="col2">Notes</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="skipped">8.1 - Likes</td>
+								<td class="skipped">skipped</td>
+							</tr>
+							<tr>
+								<td class="skipped">8.2 - Likes and Dislikes</td>
+								<td class="skipped">skipped</td>
+							</tr>
+							<tr>
+								<td class="skipped">8.3 - Star Ratings</td>
+								<td class="skipped">skipped</td>
+							</tr>
+							<tr>
+								<td class="skipped">8.4 - Percentage Ratings</td>
+								<td class="skipped">skipped</td>
+							</tr>
+							<tr>
+								<td class="skipped">8.5 - Aggregated Scores</td>
+								<td class="skipped">skipped</td>
+							</tr>
+							<tr>
+								<td class="skipped">8.6 - Counting Page Views</td>
+								<td class="skipped">skipped</td>
+							</tr>
+							<tr>
+								<td class="skipped">8.7 - Notifications</td>
+								<td class="skipped">skipped</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<div class="exercise">
+						<h3>Exercise</h3>
+						<div class="skipped">
+							(skip for now)
+							<br/>
+							Add the missing forum functionality to snailadvisor.com forum page.
+							<ul>
+								<li><a href="../exercises/snailadvisor.com/store.html" target="_blank">Store</a></li>
+							</ul>
+
+						</div><!-- skipped -->
+					</div><!-- exercise -->
+
+					<br/>
+
+
+
+
+
+
+					<h2>Part 9 - Blog</h2>
+
+					<p>
+						In this section we look at creating blogs, firstly a regular simple
+						blog, followed by a great looking magazine-style format with multiple
+						sized images.
+					</p>
+
+					<br/>
+					<table>
+						<thead>
+							<tr>
+								<th>Example Page</th>
+								<th class="col2">Notes</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="skipped">9.1 - Blog</td>
+								<td class="skipped">skipped</td>
+							</tr>
+							<tr>
+								<td class="skipped">9.2 - Fancy Blog</td>
+								<td class="skipped">skipped</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<div class="exercise">
+						<h3>Exercise</h3>
+						<div class="skipped">
+							(skip for now)
+							<br/>
+							Add the missing blog functionality to snailadvisor.com blog page.
+							<ul>
+								<li><a href="../exercises/snailadvisor.com/blog.html" target="_blank">Blog</a></li>
+							</ul>
+
+						</div><!-- skipped -->
+					</div><!-- exercise -->
+
+					<br/>
+
+
+
+
+
+
+
+					<h2>Part 10 - Chat and Messaging</h2>
+
+					<p>
+						In this section we look at how Crowdhound can provide basic functionality,
+						between two people, or as a group.
+					</p>
+
+					<br/>
+					<table>
+						<thead>
+							<tr>
+								<th>Example Page</th>
+								<th class="col2">Notes</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="skipped">10.1 - Two-person chat</td>
+								<td class="skipped">skipped</td>
+							</tr>
+							<tr>
+								<td class="skipped">10.2 - Group chat</td>
+								<td class="skipped">skipped</td>
+							</tr>
+						</tbody>
+					</table>
+					<br>
+					<br>
+
+
+
+
+					<h2>Part 11 - Calendars and Events</h2>
+
+					<p>
+						Crowdhound support calendar functionality, to notify users of events
+						they might be interested in, to send reminders, and to assist
+						scheduling of events.
+
+					</p>
+
+					<br/>
+					<table>
+						<thead>
+							<tr>
+								<th>Example Page</th>
+								<th class="col2">Notes</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="skipped">11.1 - Creating and Viewing Events</td>
+								<td class="skipped">skipped</td>
+							</tr>
+							<tr>
+								<td class="skipped">11.2 - Calendar</td>
+								<td class="skipped">skipped</td>
+							</tr>
+						</tbody>
+					</table>
+					<br/>
+
+
+
+
+
+					<h2>Part 12 - Search</h2>
+
+					<p>
+						Crowdhound support calendar functionality, to notify users of events
+						they might be interested in, to send reminders, and to assist
+						scheduling of events.
+
+					</p>
+
+					<br/>
+					<table>
+						<thead>
+							<tr>
+								<th>Example Page</th>
+								<th class="col2">Notes</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="skipped">12.1 - Overview of search functionality</td>
+								<td class="skipped">skipped</td>
+							</tr>
+							<tr>
+								<td class="skipped">12.2 - Viewing search results</td>
+								<td class="skipped">skipped</td>
+							</tr>
+							<tr>
+								<td class="skipped">12.3 - Jumping to the thread containing the element</td>
+								<td class="skipped">skipped</td>
+							</tr>
+						</tbody>
+					</table>
+					<br/>
+
+
+
+
+
+					<h2>Part 13 - Admin Screens</h2>
+
+					<p>
+						Crowdhound provides back-office functionality for use by
+						site administrators.
+					</body>
+
+				</p>
+
+				<br/>
+				<table>
+					<thead>
+						<tr>
+							<th>Topic</th>
+							<th class="col2">Wiki page</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="skipped">13.1 - Moderating posts</td>
+							<td class="skipped">skipped</td>
+						</tr>
+						<tr>
+							<td class="skipped">13.2 - Filtering bad language</td>
+							<td class="skipped">skipped</td>
+						</tr>
+						<tr>
+							<td class="skipped">13.3 - Handling of Abusing posts</td>
+							<td class="skipped">skipped</td>
+						</tr>
+						<tr>
+							<td class="skipped">13.4 - Blacklists, whitelists, and spam protection</td>
+							<td class="skipped">skipped</td>
+						</tr>
+						<tr>
+							<td class="skipped">13.5 - element browser</td>
+							<td class="skipped">skipped</td>
+						</tr>
+						<tr>
+							<td class="skipped">13.6 - Data import and export</td>
+							<td class="skipped">skipped</td>
+						</tr>
+					</tbody>
+				</table>
+				<br/>
+
+
+
+
+
+
+
+
+				<h2>Part 14 - Advanced: Tenant Plugins</h2>
+
+				<p>
+					Crowdhound provides server-side extensibility through the use of
+					"Tenant Plugins". The tenant plugins provide integration with external
+					systems, and are responsible for user authentication and
+					authorisation. For example, the user plugin might provide integration
+					with Facebook and Twitter.
+
+				</p>
+
+				<br/>
+				<table>
+					<thead>
+						<tr>
+							<th>Topic</th>
+							<th class="col2">Wiki page</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="skipped">14.1 - Tenant Plugin Architecture</td>
+							<td class="skipped">skipped</td>
+						</tr>
+						<tr>
+							<td class="skipped">14.2 - Standard Plugins</td>
+							<td class="skipped">skipped</td>
+						</tr>
+						<tr>
+							<td class="skipped">14.3 - Integration with TTAuth2</td>
+							<td class="skipped">skipped</td>
+						</tr>
+						<tr>
+							<td class="skipped">14.4 - The Anonymous User Plugin</td>
+							<td class="skipped">skipped</td>
+						</tr>
+						<tr>
+							<td class="skipped">14.5 - Custom Plugins</td>
+							<td class="skipped">skipped</td>
+						</tr>
+						<tr>
+							<td class="skipped">14.6 - Access Control Lists</td>
+							<td class="skipped">skipped</td>
+						</tr>
+					</tbody>
+				</table>
+				<br/>
+				<br/>
+				<br/>
+
+
+			</div>
+		</div>
+	</div>
+</div><!-- repo-container -->
