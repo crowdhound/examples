@@ -43,7 +43,7 @@ if [ "$1" = "-r" ] ; then
 fi
 
 # Check the endpoints have no already been changed
-FROM='//auf.crowdhound.io'
+FROM='https://auf.crowdhound.io'
 TO=$1
 ME=$(basename $0)
 

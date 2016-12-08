@@ -81,95 +81,16 @@
 	<script src="libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 
 	<!-- Crowdhound-related Javascript -->
-	<script src="//auf.crowdhound.io/libs/mustache-2.1.3/mustache.min.js"></script>
-	<script src="//auf.crowdhound.io/js/curia-0.1.2.js"></script>
+	<script src="https://auf.crowdhound.io/libs/mustache-2.1.3/mustache.min.js"></script>
+	<script src="https://auf.crowdhound.io/js/crowdhound-0.1.3.js"></script>
 	<script>
 
-	function simpleComments(config, callback) {
-
-		var newConfig = {
-			apiVersion: '2.0',
-			serverUrl: '//auf.crowdhound.io',
-			//			tenantId not defined
-			debug: false,
-			themes: {
-				"my-theme": {
-					// templates
-					"wrapper": 			'/templates/comments/wrapper',
-					"commentList_0": 	'/templates/comments/commentList',
-					"comment_1": 		'/templates/comments/comment',
-					"*_0": 				'/templates/basic/hidden',
-					// extra variables passed to the templates
-					"options": 	{ flat: true, textonly: true, readonly: true }
-				},
-			}
-		};
-
-		// Check tenantId (mandatory)
-		if (config.tenantId) {
-			newConfig.tenantId = config.tenantId;
-		} else {
-			var errmsg = 'Crowdhound.simpleComments(): TenantId not specified';
-			console.log('Error: ' + errmsg);
-			if (callback) {
-				return callback(errmsg);
-			}
-			return;
-		}
-		// Check elementId (mandatory)
-		var elementId;
-		if (config.elementId) {
-			elementId = config.elementId;
-		} else {
-			var errmsg = 'Crowdhound.simpleComments(): elementId not specified';
-			console.log('Error: ' + errmsg);
-			if (callback) {
-				return callback(errmsg);
-			}
-			return;
-		}
-
-		if (config.apiVersion) {
-			newConfig.apiVersion = config.apiVersion;
-		}
-		if (config.serverUrl) {
-			newConfig.serverUrl = config.serverUrl;
-		}
-
-		// Check domSelector (optional)
-		var domSelector = '#crowdhound';
-		if (config.domSelector) {
-			domSelector = config.domSelector;
-		}
-
-		// Check debug flag (defaults to false)
-		if (config.debug) {
-			newConfig.debug = config.debug;
-		}
-
-		// Check for a theme (optional)
-		if (config.theme) {
-			newConfig.themes['my-theme'] = config.theme;
-		}
-
-		// Initialize Crowdhound
-		CrowdHound.init(newConfig);
-
-		// Display the comments for this tutorial
-		var theme = 'my-theme';
-		CrowdHound.load(elementId, domSelector, theme);
-
-		if (callback) {
-			return callback(null);
-		}
-	}
-
-	// Display the comments section on the page
-	simpleCommentSection({
-		serverUrl: '//auf.crowdhound.io',
-		tenantId: 'examples',
-		elementId: 1000
-	});
+			// Display the comments section on the page
+			CrowdHound.simpleCommentSection({
+				serverUrl: 'https://auf.crowdhound.io',
+				tenantId: 'examples',
+				elementId: 1000
+			});
 
 	</script>
 	</html>
